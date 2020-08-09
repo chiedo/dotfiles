@@ -45,7 +45,7 @@ call vundle#begin()
     "Plugin 'tmhedberg/matchit'
     "Plugin 'bronson/vim-trailing-whitespace'
     "Plugin 'bling/vim-airline'
-    Plugin 'Valloric/YouCompleteMe'
+    "Plugin 'Valloric/YouCompleteMe'
     "Plugin 'SirVer/ultisnips'
     "Plugin 'honza/vim-snippets'
     "Plugin 'bentayloruk/vim-react-es6-snippets'
@@ -355,3 +355,4 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|.git\|vendor\|bower_compone
 "   find and replace all files matched by grep
 " xxd filename.blah | vim -   Note the dash to the left is important. Opens a
 " file in binary
+
