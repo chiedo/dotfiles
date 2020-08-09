@@ -1,5 +1,6 @@
-"Be sure to install eslint and flake8
-" Required Vundle setup
+" Requirements:
+" - Install Vundle: https://github.com/VundleVim/Vundle.vim
+" Required Vundle setup:
 filetype off
 set nocompatible
 set runtimepath+=~/.vim/bundle/Vundle.vim
