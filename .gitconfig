@@ -1,0 +1,9 @@
+[core]
+	editor = vim
+	excludesfile = /Users/chiedo/.gitignore
+[user]
+	email = chiedo@users.noreply.github.com
+	name = Chiedo
+[push]
+	default = simple
+
