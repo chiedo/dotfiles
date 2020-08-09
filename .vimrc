@@ -214,7 +214,7 @@ endif
 "vnoremap <C-k> :m '<-2<CR>gv=gv
 
 " Load autocorrections
-source ~/.vim/autocorrections.vim
+source ~/.autocorrections.vim
 
 " Vim-javascript configs
 let g:javascript_enable_domhtmlcss=1
