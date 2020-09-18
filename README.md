@@ -9,15 +9,8 @@ My dotfiles for my development environment.
 
 ## How to symlink each dotfile
 
-Take an example dotfile under the name `.example` on an OSX machine or the following on a linux machine. Keeping in mind that the absolute path below is a personal convention of mine.
+The symlink-dotfiles.sh script is available to automatically create symlinks for the dotfiles in this directory. By default, it does not overwrite whatever you may have in that directory; you will need to delete any dotfiles in your home directory that you wish to autolink.
 
 ```
-# Be sure to use an absolute path
-ln -nfs /Users/chiedo/github.com/chiedo/dotfiles/.gitconfig /Users/chiedo/.gitconfig
-```
-
-Or for an Ubuntu box
-```
-# Be sure to use an absolute path
-ln -nfs /home/chiedo/github.com/chiedo/dotfiles/.gitconfig /home/chiedo/.gitconfig
+bash symlink-dotfiles.sh
 ```

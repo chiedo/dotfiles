@@ -1,5 +1,6 @@
 " Requirements:
-" - Install Vundle: https://github.com/VundleVim/Vundle.vim
+" Run BundleInstall upon first run to set up Vundle
+
 " Required Vundle setup:
 filetype off
 set nocompatible
