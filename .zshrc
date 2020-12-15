@@ -1,3 +1,52 @@
+source ~/.bash_profile
+#source ~/.git-completion.bash
+source ~/.env
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# Add VS Code to PATH so I can launch it via 'code' in the terminal
+export PATH="$PATH:/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin"
+
+# Golang
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export GOPATH=$HOME/projects/golang
+export PATH=$PATH:$GOPATH/bin
+
+#MAMP Mysql
+export PATH=$PATH:/Applications/MAMP/Library/bin
+
+# AWS CLI
+export PATH=$PATH:~/Library/Python/2.7/bin
+
+#PHP CS Fixer
+export PATH=$PATH:/usr/local/sbin/php-cs-fixer
+
+#Override system PHP with MAMP PHP
+export PATH=/Applications/MAMP/bin/php/php7.3.1/bin:$PATH
+
+#Tmuxinator
+# source ~/.tmux/tmuxinator.zsh
+#NVM
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+# added by Anaconda3 2019.10 installer
+# >>> conda init >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$(CONDA_REPORT_ERRORS=false '/Users/chiedo/opt/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    \eval "$__conda_setup"
+else
+    if [ -f "/Users/chiedo/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/chiedo/opt/anaconda3/etc/profile.d/conda.sh"
+        CONDA_CHANGEPS1=false conda activate base
+    else
+        \export PATH="/Users/chiedo/opt/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda init <<<
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
