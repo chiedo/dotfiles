@@ -8,10 +8,12 @@ if [ ! -d $VUNDLE_TARGET ]; then
     mkdir $HOME/.vim
     mkdir $HOME/.vim/bundle
     git clone $VUNDLE_GIT $VUNDLE_TARGET
-    vim -c ':silent! colors' -c ':silent! BundleInstall' -c ':BundleInstall' -c ":x" -c ":x"
 else
     echo "Vundle appears to already be installed."
 fi
+
+# Make sure BundleInstall has executed
+vim -c ':silent! colors' -c ':silent! BundleInstall' -c ':BundleInstall' -c ":x" -c ":x"
 
 # Install Powerline Fonts
 git clone https://github.com/powerline/fonts.git --depth=1
@@ -19,7 +21,6 @@ cd fonts
 ./install.sh
 cd ..
 rm -rf fonts
-cd
 
 # Create a symlink for each dotfile in the home directory
 
