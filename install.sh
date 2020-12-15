@@ -19,6 +19,7 @@ cd fonts
 ./install.sh
 cd ..
 rm -rf fonts
+cd
 
 # Create a symlink for each dotfile in the home directory
 
