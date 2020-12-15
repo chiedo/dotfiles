@@ -27,6 +27,7 @@ DOTFILES=(
     ".bash_aliases"
     ".bash_functions"
     ".bash_python_aliases"
+    ".autocorrections.vim"
     ".gitconfig"
     ".gitignore_global"
     ".tmux.conf"
