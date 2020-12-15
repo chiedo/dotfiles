@@ -13,6 +13,13 @@ else
     echo "Vundle appears to already be installed."
 fi
 
+# Install Powerline Fonts
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
+
 # Create a symlink for each dotfile in the home directory
 
 DOTFILES=(
