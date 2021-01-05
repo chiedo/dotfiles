@@ -1,3 +1,5 @@
 [user]
 	email = chiedo@users.noreply.github.com
 	name = chiedo
+[core]
+	excludesfile = /Users/chiedo/.gitignore_global

@@ -54,4 +54,7 @@ for dotfile in ${DOTFILES[@]}; do
     fi
 done
 
+# Set global gitignore
+git config --global core.excludesfile ~/.gitignore_global
+
 echo "All done"
