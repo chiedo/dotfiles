@@ -3,3 +3,9 @@
 	name = chiedo
 [core]
 	excludesfile = /Users/chiedo/.gitignore_global
+[github]
+	user = chiedo
+[push]
+	default = simple
+[credential]
+	helper = osxkeychain
