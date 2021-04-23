@@ -12,17 +12,6 @@ else
     echo "Vundle appears to already be installed."
 fi
 
-# Make sure BundleInstall has executed
-vim -c ':silent! colors' -c ':silent! BundleInstall' -c ':BundleInstall' -c ":x" -c ":x"
-
-# Install Powerline Fonts
-if ! [ "$CODESPACES" = true ]; then
-    git clone https://github.com/powerline/fonts.git --depth=1
-    cd fonts
-    ./install.sh
-    cd ..
-    rm -rf fonts
- fi
 
 # Create a symlink for each dotfile in the home directory
 
@@ -55,6 +44,16 @@ for dotfile in ${DOTFILES[@]}; do
         ln -sf $DIR/$dotfile $HOME/$dotfile
     fi
 done
+
+# Make sure BundleInstall has executed
+vim -c ':silent! colors' -c ':silent! BundleInstall' -c ':BundleInstall' -c ":x" -c ":x"
+
+# Install Powerline Fonts
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
 
 # Set global gitignore
 git config --global core.excludesfile ~/.gitignore_global
