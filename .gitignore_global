@@ -43,6 +43,7 @@ node_modules
 # NFS files #
 .nfs*
 venv
+vendor
 vendor/bundle
 .bundle/config
 
