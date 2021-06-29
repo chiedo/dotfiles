@@ -50,25 +50,21 @@ done
 if [[ "$OSTYPE" == "darwin"* ]]; then
   # Set up a symlink for VSCode settings.json
   ln -sf $DIR/.vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
-
-  # Install Powerline Fonts
-  git clone https://github.com/powerline/fonts.git --depth=1
-  cd fonts
-  ./install.sh
-  cd ..
-  rm -rf fonts
 elif ! [ "$CODESPACES" = true ]; then
-  # Set up a symlink for VSCode settings.json
-  ln -sf $DIR/.vscode/settings.json $HOME/.config/Code/User/settings.json
-
-  # Install Powerline Fonts
-  sudo apt-get install fonts-powerline
+  echo "Syncing is automatic for Codespaces via Settings Sync"
 #Linux
 else
-  # No specific symlink is needed. It can use .vscode/settings.json directly
-  # Install Powerline Fonts
-  sudo apt-get install fonts-powerline
+  # Set up a symlink for VSCode settings.json
+  ln -sf $DIR/.vscode/settings.json $HOME/.config/Code/User/settings.json
 fi
+
+# Install Powerline Fonts
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
+fc-cache -vf
 
 # Make sure BundleInstall has executed
 vim -c ':silent! BundleInstall' -c ':BundleInstall' -c ":x" -c ":x"
