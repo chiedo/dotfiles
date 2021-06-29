@@ -12,5 +12,6 @@
     "window.restoreWindows": "all",
     "terminal.integrated.confirmOnExit": true,
     "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.fontSize": 16
+    "terminal.integrated.fontSize": 16,
+    "editor.inlineSuggest.enabled": true
 }
