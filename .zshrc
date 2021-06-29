@@ -1,6 +1,6 @@
 #source ~/.bash_profile
 #source ~/.git-completion.bash
-if [ ! -d ~/.env ]; then
+if [ -d ~/.env ]; then
   source ~/.env
 fi
 
