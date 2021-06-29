@@ -50,7 +50,7 @@ done
 if [[ "$OSTYPE" == "darwin"* ]]; then
   # Set up a symlink for VSCode settings.json
   ln -sf $DIR/.vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
-elif ! [ "$CODESPACES" = true ]; then
+elif ! [ "$CODESPACES" = 1 ]; then
   echo "Syncing is automatic for Codespaces via Settings Sync"
 #Linux
 else
