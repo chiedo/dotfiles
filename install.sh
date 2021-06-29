@@ -49,7 +49,7 @@ done
 # Mac
 if [[ "$OSTYPE" == "darwin"* ]]; then
   # Set up a symlink for VSCode settings.json
-  ln -sf $DIR/vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
+  ln -sf $DIR/.vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
 
   # Install Powerline Fonts
   git clone https://github.com/powerline/fonts.git --depth=1
@@ -60,7 +60,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 #Linux
 else
   # Set up a symlink for VSCode settings.json
-  ln -sf $DIR/vscode/settings.json $HOME/.config/Code/User/settings.json
+  ln -sf $DIR/.vscode/settings.json $HOME/.config/Code/User/settings.json
 
   # Install Powerline Fonts
   sudo apt-get install fonts-powerline
