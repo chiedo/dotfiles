@@ -45,6 +45,10 @@ for dotfile in ${DOTFILES[@]}; do
     fi
 done
 
+# Set up a symlink for VSCode settings.json
+ln -sf $DIR/vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
+ln -sf $DIR/vscode/settings.json $HOME/.config/Code/User/settings.json
+
 # Make sure BundleInstall has executed
 vim -c ':silent! colors' -c ':silent! BundleInstall' -c ':BundleInstall' -c ":x" -c ":x"
 

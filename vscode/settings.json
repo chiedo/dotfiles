@@ -1,0 +1,12 @@
+{
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.fontFamily": "Roboto Mono for Powerline",
+    "workbench.startupEditor": "none",
+    "editor.fontFamily": "'Roboto Mono for Powerline', Menlo, Monaco, 'Courier New', monospace"
+}
