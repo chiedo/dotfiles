@@ -24,6 +24,7 @@ DOTFILES=(
     ".gitignore_global"
     ".tmux.conf"
     ".oh-my-zsh"
+    ".vscode"
     ".vimrc"
     ".zshrc"
 )
