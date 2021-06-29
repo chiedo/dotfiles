@@ -46,19 +46,29 @@ for dotfile in ${DOTFILES[@]}; do
     fi
 done
 
-# Set up a symlink for VSCode settings.json
-ln -sf $DIR/vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
-ln -sf $DIR/vscode/settings.json $HOME/.config/Code/User/settings.json
+# Mac
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  # Set up a symlink for VSCode settings.json
+  ln -sf $DIR/vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
+
+  # Install Powerline Fonts
+  git clone https://github.com/powerline/fonts.git --depth=1
+  cd fonts
+  ./install.sh
+  cd ..
+  rm -rf fonts
+#Linux
+else
+  # Set up a symlink for VSCode settings.json
+  ln -sf $DIR/vscode/settings.json $HOME/.config/Code/User/settings.json
+
+  # Install Powerline Fonts
+  sudo apt-get install fonts-powerline
+fi
 
 # Make sure BundleInstall has executed
 vim -c ':silent! colors' -c ':silent! BundleInstall' -c ':BundleInstall' -c ":x" -c ":x"
 
-# Install Powerline Fonts
-git clone https://github.com/powerline/fonts.git --depth=1
-cd fonts
-./install.sh
-cd ..
-rm -rf fonts
 
 # Set global gitignore
 git config --global core.excludesfile ~/.gitignore_global

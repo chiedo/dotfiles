@@ -6,10 +6,11 @@
     "vim.hlsearch": true,
     "security.workspace.trust.untrustedFiles": "open",
     "terminal.integrated.defaultProfile.osx": "zsh",
-    "zenMode.hideStatusBar": true,
-    "zenMode.fullScreen": false,
     "terminal.integrated.fontFamily": "Roboto Mono for Powerline",
     "workbench.startupEditor": "none",
     "editor.fontFamily": "'Roboto Mono for Powerline', Menlo, Monaco, 'Courier New', monospace",
-    "window.restoreWindows": "all"
+    "window.restoreWindows": "all",
+    "terminal.integrated.confirmOnExit": true,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.fontSize": 16
 }
