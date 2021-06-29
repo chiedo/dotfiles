@@ -57,11 +57,15 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   ./install.sh
   cd ..
   rm -rf fonts
-#Linux
-else
+elif ! [ "$CODESPACES" = true ]; then
   # Set up a symlink for VSCode settings.json
   ln -sf $DIR/.vscode/settings.json $HOME/.config/Code/User/settings.json
 
+  # Install Powerline Fonts
+  sudo apt-get install fonts-powerline
+#Linux
+else
+  # No specific symlink is needed. It can use .vscode/settings.json directly
   # Install Powerline Fonts
   sudo apt-get install fonts-powerline
 fi
