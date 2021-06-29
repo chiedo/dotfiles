@@ -67,7 +67,7 @@ else
 fi
 
 # Make sure BundleInstall has executed
-vim -c ':silent! colors' -c ':silent! BundleInstall' -c ':BundleInstall' -c ":x" -c ":x"
+vim -c ':silent! BundleInstall' -c ':BundleInstall' -c ":x" -c ":x"
 
 
 # Set global gitignore

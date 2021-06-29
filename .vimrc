@@ -66,7 +66,7 @@ set background=dark
 set relativenumber
 set cursorline
 
-colors jellybeans
+silent! colors jellybeans
 
 set expandtab
 set smarttab
