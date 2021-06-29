@@ -1,6 +1,8 @@
 #source ~/.bash_profile
 #source ~/.git-completion.bash
-source ~/.env
+if [ ! -d ~/.env ]; then
+  source ~/.env
+fi
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
