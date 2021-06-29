@@ -11,4 +11,3 @@ My dotfiles for my development environment.
 
 - Set up `https://github.com/lysyi3m/macos-terminal-themes` with the `Arthur` Theme
 - Make the terminal fontsize `16`
-- Make the font `Roboto Mono for Powerline`

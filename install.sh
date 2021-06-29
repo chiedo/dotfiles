@@ -58,14 +58,6 @@ else
   ln -sf $DIR/.vscode/settings.json $HOME/.config/Code/User/settings.json
 fi
 
-# Install Powerline Fonts
-git clone https://github.com/powerline/fonts.git --depth=1
-cd fonts
-./install.sh
-cd ..
-rm -rf fonts
-fc-cache -vf
-
 # Make sure BundleInstall has executed
 vim -c ':silent! BundleInstall' -c ':BundleInstall' -c ":x" -c ":x"
 
