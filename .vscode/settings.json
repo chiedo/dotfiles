@@ -42,6 +42,14 @@
           {
             "splitTerminals": [
               {
+                "name": "docs-internal",
+                "commands": ["cd ~/github.com/github/docs-internal"]
+              },
+            ]
+          },
+          {
+            "splitTerminals": [
+              {
                 "name": "dotfiles",
                 "commands": ["cd ~/github.com/chiedo/dotfiles"]
               },
