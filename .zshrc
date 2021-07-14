@@ -170,4 +170,7 @@ base64func() {
 alias base64=base64func
 
 #Default system editor
-export EDITOR=vim
+#export EDITOR=vim
+export EDITOR=code
+
+alias vim=code
