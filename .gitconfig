@@ -3,6 +3,7 @@
 	name = chiedo
 [core]
 	excludesfile = /Users/chiedo/.gitignore_global
+	editor = code --wait
 [github]
 	user = chiedo
 [push]
