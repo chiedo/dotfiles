@@ -13,5 +13,46 @@
     "terminal.integrated.confirmOnExit": true,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.fontSize": 16,
-    "editor.inlineSuggest.enabled": true
+    "editor.inlineSuggest.enabled": true,
+    "restoreTerminals.terminals": [
+        {
+          "splitTerminals": [
+            {
+              "name": "docs-engineering",
+              "commands": ["cd ~/github.com/github/docs-engineering"]
+            },
+          ]
+        },
+        {
+            "splitTerminals": [
+              {
+                "name": "site-engineering",
+                "commands": ["cd ~/github.com/github/site-engineering"]
+              },
+            ]
+          },
+          {
+            "splitTerminals": [
+              {
+                "name": "docs-team",
+                "commands": ["cd ~/github.com/github/docs-team"]
+              },
+            ]
+          },
+          {
+            "splitTerminals": [
+              {
+                "name": "dotfiles",
+                "commands": ["cd ~/github.com/chiedo/dotfiles"]
+              },
+            ]
+          },
+          {
+            "splitTerminals": [
+              {
+                "name": "misc"
+              },
+            ]
+          },
+      ]
 }
