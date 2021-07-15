@@ -50,6 +50,14 @@
           {
             "splitTerminals": [
               {
+                "name": "learning-lab",
+                "commands": ["cd ~/github.com/github/learning-lab"]
+              },
+            ]
+          },
+          {
+            "splitTerminals": [
+              {
                 "name": "dotfiles",
                 "commands": ["cd ~/github.com/chiedo/dotfiles"]
               },
